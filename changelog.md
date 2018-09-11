@@ -1,3 +1,7 @@
+1.4.4
+-----
+* Change image path on CSS file
+
 1.4.1
 -----
 * Fix for #2360
