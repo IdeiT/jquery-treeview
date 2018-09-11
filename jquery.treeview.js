@@ -167,11 +167,11 @@
 				branches.each(function(i, e) {
 					data[i] = $(e).is(":has(>ul:visible)") ? 1 : 0;
 				});
-				$.cookie(settings.cookieId, data.join(""), settings.cookieOptions );
+				Cookies.set(settings.cookieId, data.join(""), settings.cookieOptions );
 			}
 
 			function deserialize() {
-				var stored = $.cookie(settings.cookieId);
+				var stored = Cookies.get(settings.cookieId);
 				if ( stored ) {
 					var data = stored.split("");
 					branches.each(function(i, e) {
